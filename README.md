@@ -1,4 +1,4 @@
 2013Iterative
 =============
 
-oh forgot to save the readme lolol
+2013 Iterative Code as of kellys "Polished Code" in September 9, 2013.
