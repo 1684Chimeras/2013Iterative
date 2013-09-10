@@ -1,4 +1,10 @@
 2013Iterative
-=============
+===========
 
-2013 Iterative Code as of kellys "Polished Code" in September 9, 2013.
+## *Author*: Kelly
+
+This is code for FRC Team 1684 "The Chimeras"' 2013 robot, designed to play "Rebound Rumble" 
+
+This code uses a command-based structure.
+
+This is the "Latest Code" as of September 9, 2013.
