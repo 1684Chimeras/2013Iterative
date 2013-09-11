@@ -65,7 +65,7 @@ public class Teleoperated
             //switched because opposite
         driveTrain.arcadeDrive(controllers.driver_LeftJoystick_Rotate(), controllers.driver_LeftJoystick_Move(), true);
 
-        //SHIFTING
+        //SHIFTING Things
         if (controllers.getDriver_LeftTrigger() == true){
             //LOW GEAR
             driveTrain.shiftLow();
