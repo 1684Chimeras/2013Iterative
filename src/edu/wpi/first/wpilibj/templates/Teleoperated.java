@@ -63,16 +63,14 @@ public class Teleoperated
 
         //DRIVING
             //switched because opposite
-        driveTrain.arcadeDrive(controllers.driver_LeftJoystick_Rotate(), controllers.driver_LeftJoystick_Move(), true);
+        //driveTrain.arcadeDrive(controllers.driver_LeftJoystick_Rotate(), controllers.driver_LeftJoystick_Move(), true);
 
         //SHIFTING
         if (controllers.getDriver_LeftTrigger() == true){
             //LOW GEAR
             driveTrain.shiftLow();
             driveTrain.arcadeDrive(controllers.driver_LeftJoystick_Rotate(), controllers.driver_LeftJoystick_Move(), true);
-        }
-        
-        if (controllers.getDriver_LeftTrigger() == false){
+        }else{
             //HIGH GEAR
             driveTrain.shiftHigh();
             driveTrain.arcadeDrive(controllers.driver_LeftJoystick_Rotate(), controllers.driver_LeftJoystick_Move(), true);
@@ -100,15 +98,11 @@ public class Teleoperated
             arm.armLoadPosition();
         }
 
-        if ((!controllers.getDriver_RightTrigger()) && (controllers.driver_ButtonX())){
+        if (controllers.driver_ButtonX()){
             arm.rollerOut();
-        }
-
-        if (((controllers.getDriver_RightTrigger()) && (!controllers.driver_ButtonX()))) {
+        }else if(controllers.driver_LeftBumper()) {
             arm.rollerIn();
-        }
-        
-        if ((!controllers.getDriver_RightTrigger()) && (!controllers.driver_ButtonX())) {
+        }else{
             arm.rollerOff();
         }
         

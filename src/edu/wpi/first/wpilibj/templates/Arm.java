@@ -7,7 +7,6 @@ package edu.wpi.first.wpilibj.templates;
 import edu.wpi.first.wpilibj.Jaguar;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.Timer;
-
 /**
  *
  * @author Kelly
@@ -19,7 +18,7 @@ public class Arm
     Solenoid armLoadOut;
     Timer timer;
     Jaguar roller;
-
+    
     public Arm(Pneumatics Pneumatics)
     {
         armUp = Pneumatics.armUp;
