@@ -1,0 +1,9 @@
+# Mac Desktop Settings #
+
+*.DS_STORE
+*._.DS_STORE
+
+
+# Netbeans build files #
+
+private.xml
